@@ -10,6 +10,7 @@ DataField = [
   "Off", "Timer", "Lap Time"
 ];
 OnOff = ["On", "Off"];
+YesNo = ["Yes", "No"];
 EnableDisable = ["Enable", "Disable"];
 HRZoneCustomHigh = [45, "...", 250];
 HRZoneCustomLow = [35, "...", 240];
@@ -106,7 +107,7 @@ Menu = {
         },
         "Foot Pod": {
           "Status": OnOff,
-          "Calibration Factor": [50.00 50.10, "...", 150.00],
+          "Calibration Factor": [50.00, 50.10, "...", 150.00],
           "Remove": null
         }
       },
@@ -152,7 +153,7 @@ Menu = {
         "Time Format": ["12-Hour", "24-Hour"],
         "Set Time": ["Auto", "Manual"],
         "Background": ["White", "Black"],
-        "Use Theme Color": ["Yes", "No"]
+        "Use Theme Color": YesNo
       },
       "Backlight": {
         "Mode": ["Keys/Alerts", "Manual"],
@@ -163,13 +164,22 @@ Menu = {
         "Alert Tones": OnOff,
         "Vibrations": OnOff,
       },
-      "Units": ,
-      "Theme Color": ,
-      "GPS": ,
-      "Format": ,
-      "Restore Default": ,
-      "Software Update": ,
-      "About": ,
+      "Units": {
+        "Distance": ["Kilometers", "Miles"],
+        "Pace/Speed": ["Kilometers", "Miles"],
+        "Elevation": ["Meters", "Feet"],
+        "Weight": ["Pounds", "Kilograms"],
+        "Height": ["Feet", "Centimeters"]
+      },
+      "Theme Color": ["Blue", "Green", "Orange", "Red", "Yellow", "Pink", "Purple"],
+      "GPS": OnOff,
+      "Format": {
+        "Running": ["Show Pace", "Show Speed"],
+        "Start of Week": ["Saturday", "Sunday", "Monday"],
+      },
+      "Restore Default": YesNo,
+      "Software Update": null,
+      "About": null,
     }
   },
 };
