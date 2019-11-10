@@ -1,7 +1,7 @@
 forerunner-menu
 ============
 
-All menu items of the Garmin Forerunner 220 sport watch as a JSON.
+All settings items of the Garmin Forerunner 220 sport watch as a JSON.
 
 Introduction
 ------------
