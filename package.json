@@ -1,0 +1,29 @@
+{
+  "name": "forerunner-settings",
+  "version": "0.0.0",
+  "description": "All settings items of the Garmin Forerunner 220 sport watch as a JSON.",
+  "main": "for\terunner-settings.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/undebuggable/forerunner-settings.git"
+  },
+  "keywords": [
+    "Garmin",
+    "Forerunner",
+    "settings",
+    "sport",
+    "watch"
+  ],
+  "author": "Pawel Owczarek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/undebuggable/forerunner-settings/issues"
+  },
+  "homepage": "https://github.com/undebuggable/forerunner-settings#readme",
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  }
+}
