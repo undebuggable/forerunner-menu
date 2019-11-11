@@ -8,6 +8,14 @@
 // Time = ["0min 15sec", "0min 30sec", "0min 45sec", "1min 0sec", "...", "59min 45sec"];
 // PauseCustomKmh = [1.60, 1.65, "...", 30];
 
+function expandTime(min, max, step) {
+  return Array.from(new Array(1 + (max - min) / step), (value, index) => {
+    return min + index * step
+  }).map((value, index) => {
+    return ''.concat(Math.floor(value / 60), 'min', ' ', value % 60, 'sec')
+  })
+}
+
 HR_ZONE_CUSTOM_HIGH_MIN = 45
 HR_ZONE_CUSTOM_HIGH_MAX = 250
 HR_ZONE_CUSTOM_HIGH_STEP = 5
@@ -35,30 +43,27 @@ HR_ZONE_CUSTOM_LOW = Array.from(
 PACE_FASTEST_MIN = 145
 PACE_FASTEST_MAX = 545
 PACE_FASTEST_STEP = 5
-PACE_FASTEST = Array.from(
-  new Array(1 + (PACE_FASTEST_MAX - PACE_FASTEST_MIN) / PACE_FASTEST_STEP),
-  (value, index) => {
-    return PACE_FASTEST_MIN + index * PACE_FASTEST_STEP
-  }
-).map((value, index) => {
-  return ''.concat(Math.floor(value / 60), 'min', ' ', value % 60, 'sec')
-})
+PACE_FASTEST = expandTime(PACE_FASTEST_MIN, PACE_FASTEST_MAX, PACE_FASTEST_STEP)
 
 PACE_SLOWEST_MIN = 160
 PACE_SLOWEST_MAX = 560
 PACE_SLOWEST_STEP = 5
-PACE_SLOWEST = Array.from(
-  new Array(1 + (PACE_SLOWEST_MAX - PACE_SLOWEST_MIN) / PACE_SLOWEST_STEP),
-  (value, index) => {
-    return PACE_SLOWEST_MIN + index * PACE_SLOWEST_STEP
-  }
-).map((value, index) => {
-  return ''.concat(Math.floor(value / 60), 'min', ' ', value % 60, 'sec')
-})
+PACE_SLOWEST = expandTime(PACE_SLOWEST_MIN, PACE_SLOWEST_MAX, PACE_SLOWEST_STEP)
+
+DURATION_TIME_MIN = 5
+DURATION_TIME_MAX = 3595
+DURATION_TIME_STEP = 5
+DURATION_TIME = expandTime(DURATION_TIME_MIN, DURATION_TIME_MAX, DURATION_TIME_STEP)
+
+TIME_MIN = 15
+TIME_MAX = 3585
+TIME_STEP = 15
+TIME = expandTime(TIME_MIN, TIME_MAX, TIME_STEP)
 
 module.exports = {
   HR_ZONE_CUSTOM_HIGH: HR_ZONE_CUSTOM_HIGH,
   HR_ZONE_CUSTOM_LOW: HR_ZONE_CUSTOM_LOW,
   PACE_FASTEST: PACE_FASTEST,
-  PACE_SLOWEST: PACE_SLOWEST,
+  DURATION_TIME: DURATION_TIME,
+  TIME: TIME,
 }

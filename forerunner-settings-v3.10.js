@@ -9,8 +9,6 @@ CONFIG = { ...CFG1, ...CFG2 }
 
 DistanceKm = [0.25, 0.3, '...', 99.95]
 DurationKm = [0.05, 0.1, '...', 99.95]
-DurationTime = ['0min 5sec', '0min 10sec', '...', '59min 55sec']
-Time = ['0min 15sec', '0min 30sec', '0min 45sec', '1min 0sec', '...', '59min 45sec']
 PauseCustomKmh = [1.6, 1.65, '...', 30]
 
 //Arrow up pressed
@@ -25,11 +23,11 @@ Menu = {
       'Do Workout': null,
       Edit: {
         Interval: {
-          Duration: DurationKm | DurationTime,
+          Duration: DurationKm | CONFIG.DURATION_TIME,
           Type: ['Distance', 'Time', 'Open'],
         },
         Rest: {
-          Duration: DurationTime,
+          Duration: CONFIG.DURATION_TIME,
           Type: ['Distance', 'Time', 'Open'],
         },
         Repeat: [2, 3, '...', 99],
@@ -73,8 +71,8 @@ Menu = {
         },
         'Run/Walk': {
           Status: CONFIG.ON_OFF,
-          'Run Time': Time,
-          'Walk Time': Time,
+          'Run Time': CONFIG.TIME,
+          'Walk Time': CONFIG.TIME,
         },
         Pace: {
           'Fast Alert': CONFIG.ON_OFF,
