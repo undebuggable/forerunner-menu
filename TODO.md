@@ -1,2 +1,3 @@
 - [REFACTOR] Use loops to expand all values for HR Zones, pace, distance, time
 - [REFACTOR] Extract all expandable values into a separate module
+- [BUG] Introduce an another way to represent alternative set of values rather than the pipe character ("|") - that's a JavaScript bitwise OR
