@@ -32,7 +32,33 @@ HR_ZONE_CUSTOM_LOW = Array.from(
   }
 )
 
+PACE_FASTEST_MIN = 145
+PACE_FASTEST_MAX = 545
+PACE_FASTEST_STEP = 5
+PACE_FASTEST = Array.from(
+  new Array(1 + (PACE_FASTEST_MAX - PACE_FASTEST_MIN) / PACE_FASTEST_STEP),
+  (value, index) => {
+    return PACE_FASTEST_MIN + index * PACE_FASTEST_STEP
+  }
+).map((value, index) => {
+  return ''.concat(Math.floor(value / 60), 'min', ' ', value % 60, 'sec')
+})
+
+PACE_SLOWEST_MIN = 160
+PACE_SLOWEST_MAX = 560
+PACE_SLOWEST_STEP = 5
+PACE_SLOWEST = Array.from(
+  new Array(1 + (PACE_SLOWEST_MAX - PACE_SLOWEST_MIN) / PACE_SLOWEST_STEP),
+  (value, index) => {
+    return PACE_SLOWEST_MIN + index * PACE_SLOWEST_STEP
+  }
+).map((value, index) => {
+  return ''.concat(Math.floor(value / 60), 'min', ' ', value % 60, 'sec')
+})
+
 module.exports = {
   HR_ZONE_CUSTOM_HIGH: HR_ZONE_CUSTOM_HIGH,
   HR_ZONE_CUSTOM_LOW: HR_ZONE_CUSTOM_LOW,
+  PACE_FASTEST: PACE_FASTEST,
+  PACE_SLOWEST: PACE_SLOWEST,
 }

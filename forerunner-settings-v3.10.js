@@ -7,8 +7,6 @@ CFG1 = require('./forerunner-config.js')
 CFG2 = require('./forerunner-config-expanded.js')
 CONFIG = { ...CFG1, ...CFG2 }
 
-PaceFastest = ['2min 25sec', '2min 30sec', '...', '9min 5sec']
-PaceSlowest = ['2min 40sec', '2min 45sec', '...', '9min 20sec']
 DistanceKm = [0.25, 0.3, '...', 99.95]
 DurationKm = [0.05, 0.1, '...', 99.95]
 DurationTime = ['0min 5sec', '0min 10sec', '...', '59min 55sec']
@@ -80,9 +78,9 @@ Menu = {
         },
         Pace: {
           'Fast Alert': CONFIG.ON_OFF,
-          'Fastest Pace': PaceFastest,
+          'Fastest Pace': CONFIG.PACE_FASTEST,
           'Slow Alert': CONFIG.ON_OFF,
-          'Slowest Pace': PaceSlowest,
+          'Slowest Pace': CONFIG.PACE_SLOWEST,
         },
       },
       'Auto Lap': {
