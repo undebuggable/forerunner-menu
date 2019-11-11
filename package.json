@@ -2,7 +2,7 @@
   "name": "forerunner-settings",
   "version": "0.0.0",
   "description": "All settings items of the Garmin Forerunner 220 sport watch as a JSON.",
-  "main": "for\terunner-settings.js",
+  "main": "forerunner-settings.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
