@@ -1,0 +1,610 @@
+{
+  "Training": {
+    "My Workouts": null,
+    "Training Calendar": null,
+    "Intervals": {
+      "Do Workout": null,
+      "Edit": {
+        "Interval": {
+          "Duration": 0,
+          "Type": [
+            "Distance",
+            "Time",
+            "Open"
+          ]
+        },
+        "Rest": {
+          "Duration": [
+            "0min 5sec",
+            "0min 10sec",
+            "...",
+            "59min 55sec"
+          ],
+          "Type": [
+            "Distance",
+            "Time",
+            "Open"
+          ]
+        },
+        "Repeat": [
+          2,
+          3,
+          "...",
+          99
+        ],
+        "Warm Up": [
+          "On",
+          "Off"
+        ],
+        "Cool Down": [
+          "On",
+          "Off"
+        ]
+      }
+    }
+  },
+  "History": {
+    "Activities": [],
+    "Totals": [
+      "Weekly",
+      "Monthly"
+    ],
+    "Options": [
+      "Delete All Activities",
+      "Reset Totals",
+      ""
+    ]
+  },
+  "Records": [
+    "1km",
+    "Longest Run",
+    "Clear All Records"
+  ],
+  "Settings": {
+    "Activity Settings": {
+      "Data Screens": {
+        "Screen 1": {
+          "Top Field": [
+            "Distance",
+            "Lap Distance",
+            "Pace",
+            "Average Pace",
+            "Lap Pace",
+            "Speed",
+            "Cadence",
+            "Calories",
+            "Heart Rate",
+            "Average HR",
+            "HR Zone",
+            "Elevation",
+            "Off",
+            "Timer",
+            "Lap Time"
+          ],
+          "Middle Field": [
+            "Distance",
+            "Lap Distance",
+            "Pace",
+            "Average Pace",
+            "Lap Pace",
+            "Speed",
+            "Cadence",
+            "Calories",
+            "Heart Rate",
+            "Average HR",
+            "HR Zone",
+            "Elevation",
+            "Off",
+            "Timer",
+            "Lap Time"
+          ],
+          "Bottom Field": [
+            "Distance",
+            "Lap Distance",
+            "Pace",
+            "Average Pace",
+            "Lap Pace",
+            "Speed",
+            "Cadence",
+            "Calories",
+            "Heart Rate",
+            "Average HR",
+            "HR Zone",
+            "Elevation",
+            "Off",
+            "Timer",
+            "Lap Time"
+          ],
+          "Preview": null
+        },
+        "Screen 2": {
+          "Status": [
+            "On",
+            "Off"
+          ],
+          "Top Field": [
+            "Distance",
+            "Lap Distance",
+            "Pace",
+            "Average Pace",
+            "Lap Pace",
+            "Speed",
+            "Cadence",
+            "Calories",
+            "Heart Rate",
+            "Average HR",
+            "HR Zone",
+            "Elevation",
+            "Off",
+            "Timer",
+            "Lap Time"
+          ],
+          "Middle Field": [
+            "Distance",
+            "Lap Distance",
+            "Pace",
+            "Average Pace",
+            "Lap Pace",
+            "Speed",
+            "Cadence",
+            "Calories",
+            "Heart Rate",
+            "Average HR",
+            "HR Zone",
+            "Elevation",
+            "Off",
+            "Timer",
+            "Lap Time"
+          ],
+          "Bottom Field": [
+            "Distance",
+            "Lap Distance",
+            "Pace",
+            "Average Pace",
+            "Lap Pace",
+            "Speed",
+            "Cadence",
+            "Calories",
+            "Heart Rate",
+            "Average HR",
+            "HR Zone",
+            "Elevation",
+            "Off",
+            "Timer",
+            "Lap Time"
+          ],
+          "Preview": null
+        },
+        "Heart Rate": {
+          "Status": [
+            "Enable",
+            "Disable"
+          ],
+          "Preview": null
+        },
+        "Clock": [
+          "On",
+          "Off"
+        ]
+      },
+      "Alerts": {
+        "Heart Rate": {
+          "High Alert": [
+            "Off",
+            "Zone1",
+            "Zone2",
+            "Zone3",
+            "Zone4",
+            "Zone5",
+            45,
+            50,
+            55,
+            60,
+            65,
+            70,
+            75,
+            80,
+            85,
+            90,
+            95,
+            100,
+            105,
+            110,
+            115,
+            120,
+            125,
+            130,
+            135,
+            140,
+            145,
+            150,
+            155,
+            160,
+            165,
+            170,
+            175,
+            180,
+            185,
+            190,
+            195,
+            200,
+            205,
+            210,
+            215,
+            220,
+            225,
+            230,
+            235,
+            240,
+            245,
+            250
+          ],
+          "Low Alert": [
+            "Off",
+            "Zone1",
+            "Zone2",
+            "Zone3",
+            "Zone4",
+            "Zone5",
+            35,
+            40,
+            45,
+            50,
+            55,
+            60,
+            65,
+            70,
+            75,
+            80,
+            85,
+            90,
+            95,
+            100,
+            105,
+            110,
+            115,
+            120,
+            125,
+            130,
+            135,
+            140,
+            145,
+            150,
+            155,
+            160,
+            165,
+            170,
+            175,
+            180,
+            185,
+            190,
+            195,
+            200,
+            205,
+            210,
+            215,
+            220,
+            225,
+            230,
+            235,
+            240
+          ]
+        },
+        "Run/Walk": {
+          "Status": [
+            "On",
+            "Off"
+          ],
+          "Run Time": [
+            "0min 15sec",
+            "0min 30sec",
+            "0min 45sec",
+            "1min 0sec",
+            "...",
+            "59min 45sec"
+          ],
+          "Walk Time": [
+            "0min 15sec",
+            "0min 30sec",
+            "0min 45sec",
+            "1min 0sec",
+            "...",
+            "59min 45sec"
+          ]
+        },
+        "Pace": {
+          "Fast Alert": [
+            "On",
+            "Off"
+          ],
+          "Fastest Pace": [
+            "2min 25sec",
+            "2min 30sec",
+            "...",
+            "9min 5sec"
+          ],
+          "Slow Alert": [
+            "On",
+            "Off"
+          ],
+          "Slowest Pace": [
+            "2min 40sec",
+            "2min 45sec",
+            "...",
+            "9min 20sec"
+          ]
+        }
+      },
+      "Auto Lap": {
+        "Status": [
+          "On",
+          "Off"
+        ],
+        "Distance": [
+          0.25,
+          0.3,
+          "...",
+          99.95
+        ]
+      },
+      "Auto Pause": [
+        "Off",
+        "When Stopped",
+        [
+          1.6,
+          1.65,
+          "...",
+          30
+        ]
+      ],
+      "Auto Scroll": [
+        "Off",
+        "Slow",
+        "Medium",
+        "Fast"
+      ],
+      "Timeout": [
+        "Normal",
+        "Extended"
+      ]
+    },
+    "Sensors": {
+      "Add Sensor": {
+        "Heart Rate Monitor": {},
+        "Foot Pod": {
+          "Status": [
+            "On",
+            "Off"
+          ],
+          "Calibration Factor": [
+            50,
+            50.1,
+            "...",
+            150
+          ],
+          "Remove": null
+        }
+      },
+      "Heart Rate": {
+        "Status": [
+          "On",
+          "Off"
+        ],
+        "Sensor Details": null,
+        "Remove": null
+      }
+    },
+    "Bluetooth": {
+      "Status": [
+        "On",
+        "Off"
+      ],
+      "Pair Mobile Device": null
+    },
+    "User Profile": {
+      "Gender": [
+        "Male",
+        "Female"
+      ],
+      "Birth Year": [
+        1900,
+        1901,
+        "...",
+        2016
+      ],
+      "Height": [
+        30,
+        31,
+        "...",
+        254
+      ],
+      "Weight": [
+        4,
+        5,
+        "...",
+        449
+      ],
+      "Heart Rate Zones": {
+        "Based On": [
+          "BPM",
+          "%Max. HR",
+          "%HRR"
+        ],
+        "Max. HR": [
+          120,
+          130,
+          "...",
+          254
+        ],
+        "Zone 5": [
+          81,
+          82,
+          "...",
+          99
+        ],
+        "Zone 4": [
+          71,
+          72,
+          "...",
+          81
+        ],
+        "Zone 3": [
+          61,
+          62,
+          "...",
+          79
+        ],
+        "Zone 2": [
+          51,
+          52,
+          "...",
+          78
+        ],
+        "Zone 1": [
+          0,
+          1,
+          "...",
+          50
+        ],
+        "Resting HR": [
+          30,
+          31,
+          "...",
+          110
+        ]
+      }
+    },
+    "Alarm": {
+      "Status": [
+        "On",
+        "Off"
+      ],
+      "Time": [
+        "0hr 00 min",
+        "0hr 01min",
+        "...",
+        "23hr 59min"
+      ]
+    },
+    "System": {
+      "Language": [
+        "Cestina",
+        "Dansk",
+        "Deutsch",
+        "Ellinika",
+        "English",
+        "Espanol",
+        "Francais",
+        "Hrvatski",
+        "Italiano",
+        "Magyar",
+        "Nederlands",
+        "Norsk",
+        "Polski",
+        "Portuges",
+        "Russkij",
+        "Slovencina",
+        "Slovenscina",
+        "Suomi",
+        "Svenska"
+      ],
+      "Clock": {
+        "Time Format": [
+          "12-Hour",
+          "24-Hour"
+        ],
+        "Set Time": [
+          "Auto",
+          "Manual"
+        ],
+        "Background": [
+          "White",
+          "Black"
+        ],
+        "Use Theme Color": [
+          "Yes",
+          "No"
+        ]
+      },
+      "Backlight": {
+        "Mode": [
+          "Keys/Alerts",
+          "Manual"
+        ],
+        "Timeout": [
+          "8 Seconds",
+          "15 Seconds",
+          "30 Seconds",
+          "1 Minute",
+          "Stays On"
+        ]
+      },
+      "Sounds": {
+        "Key Tones": [
+          "On",
+          "Off"
+        ],
+        "Alert Tones": [
+          "On",
+          "Off"
+        ],
+        "Vibrations": [
+          "On",
+          "Off"
+        ]
+      },
+      "Units": {
+        "Distance": [
+          "Kilometers",
+          "Miles"
+        ],
+        "Pace/Speed": [
+          "Kilometers",
+          "Miles"
+        ],
+        "Elevation": [
+          "Meters",
+          "Feet"
+        ],
+        "Weight": [
+          "Pounds",
+          "Kilograms"
+        ],
+        "Height": [
+          "Feet",
+          "Centimeters"
+        ]
+      },
+      "Theme Color": [
+        "Blue",
+        "Green",
+        "Orange",
+        "Red",
+        "Yellow",
+        "Pink",
+        "Purple"
+      ],
+      "GPS": [
+        "On",
+        "Off"
+      ],
+      "Format": {
+        "Running": [
+          "Show Pace",
+          "Show Speed"
+        ],
+        "Start of Week": [
+          "Saturday",
+          "Sunday",
+          "Monday"
+        ]
+      },
+      "Restore Default": [
+        "Yes",
+        "No"
+      ],
+      "Software Update": null,
+      "About": null
+    }
+  }
+}
